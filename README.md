@@ -27,3 +27,4 @@ Task 2:
 Build a UI for Rating System
 Build a UI for Rating system by using GetPlayerDetails API mentioned above to populate the page and capability to add the rating for the player using AddPlayerRating API. After adding the rating from the page, the updated average rating will be updated in the Database. 
 
+Watch Demo.mp4 video in this repo for more clarity about this project.

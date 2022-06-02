@@ -27,7 +27,7 @@ const PlayerRating = () => {
                     <input type="text" value ={skey} onChange={(e) => {setName(e.target.value)}} placeholder="Enter Player Name"/>
                     <div className="rate">         
                     <Container>
-                      {[...Array(5)].map((item, index) => {
+                      {[...Array(10)].map((item, index) => {
                         const givenRating = index + 1;
                         return (
                           <label>

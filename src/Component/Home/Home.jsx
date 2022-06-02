@@ -4,12 +4,21 @@ import Topnav from "../topnav/Topnav"
 import "./home.css"
 
 const Home = () => {
-
+<>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+  </script>
+  </>
   const [arrayData, setmethod] = useState([])
+  
 	useEffect(() => {
+		const intervalId = setInterval(() => {
 		axios.get("http://localhost:4000").then(function(response) {
 			setmethod(response.data);
 		})
+		}, 0)
+		return () => clearInterval(intervalId);
 	}, [])
 
 
